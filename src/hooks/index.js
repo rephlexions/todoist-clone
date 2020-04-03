@@ -1,5 +1,4 @@
 /* eslint-disable indent */
-// 00:40
 import { useState, useEffect } from 'react'
 import { firebase } from '../firebase'
 import { collatedTasksExist } from '../helpers/index'
@@ -49,7 +48,7 @@ export const useTasks = selectedProject => {
   return { tasks, archivedTasks }
 }
 
-export const useProject = () => {
+export const useProjects = () => {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
